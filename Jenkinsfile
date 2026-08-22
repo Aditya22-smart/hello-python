@@ -41,7 +41,6 @@ pipeline {
                             sonar-scanner \
                               -Dsonar.projectKey=$SONAR_PROJECT_KEY \
                               -Dsonar.sources=. \
-                              -Dsonar.host.url=$SONAR_HOST_URL \
                               -Dsonar.login=$SONAR_API_TOKEN \
                               -Dsonar.python.version=3.10
                         '''
